@@ -1,0 +1,14 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambia según el número de cartas */
+  gap: 15px;
+  margin: 20px auto;
+  width: 550px;
+}
+
+@media (max-width: 600px) {
+  .board {
+    grid-template-columns: repeat(2, 1fr); /* Adaptable a pantallas pequeñas */
+    width: 100%;
+  }
+}
